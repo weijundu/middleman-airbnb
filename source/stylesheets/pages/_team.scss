@@ -1,8 +1,8 @@
 .wrapper-background {
   background: linear-gradient(
   to bottom,
-  rgb(230, 230, 230) 0%,
-  rgb(230, 230, 230) 50%,
+  $grey-one 0%,
+  $grey-one 50%,
   white 50%,
   white 100%
     );
