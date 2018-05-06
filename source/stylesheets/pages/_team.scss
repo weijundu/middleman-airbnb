@@ -1,0 +1,56 @@
+.wrapper-background {
+  background: linear-gradient(
+  to bottom,
+  rgb(230, 230, 230) 0%,
+  rgb(230, 230, 230) 50%,
+  white 50%,
+  white 100%
+    );
+  margin-top: 0px;
+  height: 100vh;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.team-content {
+  text-align: center;
+  vertical-align: center;
+  align-items: center;
+  h1 {
+  font-size: 30px;
+  color: rgb(80, 80, 80);
+  font-weight:bolder;
+  }
+}
+
+.team-info {
+  margin: 40px 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.team {
+  margin: 0px 10px;
+  h3 {
+    font-size: 20px;
+    font-weight: bolder;
+    color:rgb(100, 100, 100);
+    letter-spacing: 0.05em;
+  }
+  i {
+    color:rgb(180, 180, 180)
+  }
+}
+
+.img-circle.member {
+  height: 150px;
+  width: 150px;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+  filter: grayscale(30%);
+}
+
+.fa.fa-heart {
+  color: red;
+}
+

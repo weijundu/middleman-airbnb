@@ -1,0 +1,19 @@
+<div class="wrapper-background">
+  <div class="team-content">
+    <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
+    <div class="team-info">
+      <% [{name: "Weijun Du", web: "weijundu"}, {name:"Will Jones", web: "wsjones25"}].each do |teammate| %>
+      <div class="team">
+        <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{teammate[:web]}", class: "img-circle member"%>
+        <h3><%= teammate[:name] %></h3>
+        <% link_to "https://kitt.lewagon.com/alumni/#{teammate[:web]}" do %>
+          <i class="fa fa-github"><%= teammate[:web] %></i>
+        <% end %>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</div>
+
+
+
