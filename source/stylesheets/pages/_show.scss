@@ -1,0 +1,104 @@
+.city-banner {
+  height: 50vh;
+  background-size: cover;
+  background-position: center;
+}
+
+.mid-section {
+  display: flex;
+  justify-content: space-around;
+  height: 50vh;
+  align-items: center;
+  padding: 0px 50px;
+  background-color: white;
+}
+
+.card-owner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  img {
+    height: 70px;
+    width: 70px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-size: 12px;
+    margin-bottom: 0px;
+  }
+  li {
+    font-size: 12px;
+    padding: 0px;
+    padding: 0px;
+  }
+  i{
+    color: $yellow;
+  }
+}
+
+.owner-details {
+  margin-right: 20px;
+  text-align: center;
+}
+
+.book-form {
+  background-color: $light-gray;
+  padding: 20px 15px;
+  width: 380px;
+  h2 {
+    margin-top: 0px;
+    font-size: 22px;
+  }
+}
+
+
+.form-control.line {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.form-control.select {
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+.btn.btn-danger.button {
+  width: 100%;
+}
+
+.section-bottom {
+  width: 100%;
+  padding: 40px 150px;
+  color: $gray;
+  h3 {
+    font-size: 20px;
+  }
+  p {
+    font-size: 15px;
+  }
+}
+
+.space-info, .amenities-info {
+  margin: 25px 0px;
+  padding: 25px 0px;
+  border-top: 1px solid white;
+  display: flex;
+  p, li {
+    font-size: 15px;
+    color: $gray;
+  }
+  p {
+    margin-right: 100px;
+  }
+  i {
+    margin-right: 15px;
+  }
+}
+
+.info-one, .info-two, .am-one, .am-two {
+  width: 400px;
+}
+
+

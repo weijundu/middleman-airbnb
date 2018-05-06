@@ -1,0 +1,76 @@
+<% flat = data.flats[owner] %>
+<div class="city-banner" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_slug %>');"></div>
+<div class="mid-section">
+  <div class="card-owner">
+    <div class="owner-details">
+      <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}.jpg", class: "img-circle"%>
+      <p><%= owner %></p>
+    </div>
+    <div class="flat-details">
+      <h3><%= flat.description %></h3>
+      <p><%= flat.city_name %></p>
+      <ul class="list-inline">
+        <% flat.rating.times do %>
+        <li><i class="fa fa-star"></i></li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
+  <form action="#" class="book-form">
+    <h2>Book this flat</h2>
+
+    <div class="row">
+      <div class="col-xs-6">
+        <input type="text" placeholder = "checkin" name="check-in" class="form-control line" >
+      </div>
+      <div class="col-xs-6">
+        <input type="text" placeholder = "checkout" name="check-out" class="form-control line">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-xs-12">
+        <select name="guests" id="guests-num" class="form-control select">
+          <option value="one">1 guest</option>
+          <option value="two">2 guests</option>
+          <option value="three">3 guests</option>
+        </select>
+      </div>
+    </div>
+
+    <input type="submit" value="Book it" class="btn btn-danger button">
+  </form>
+</div>
+<div class="wrapper">
+  <div class="section-bottom">
+    <h3>About this flat</h3>
+    <p>This one bedroom studio lodges 2 people (there's 1 double bed) it is located in the city center, in a calm traditional residential area near city´s main Avenue - 3 minutes walk from Sacré Coeur.</p>
+    <div class="space-info">
+      <p>The Space</p>
+      <ul class="info-one">
+        <li>Accommodates: <strong>2</strong></li>
+        <li>Bathrooms: <strong>1</strong></li>
+        <li>Bed type: <strong>Real Bed</strong></li>
+        <li>Bedrooms: <strong>1</strong></li>
+      </ul>
+      <ul class="info-two">
+        <li>Beds: <strong>1</strong></li>
+        <li>Property type: <strong>Apartment</strong></li>
+        <li>Room type: <strong>Entire home/apt</strong></li>
+      </ul>
+    </div>
+    <div class="amenities-info">
+      <p>Amenities</p>
+      <ul class="am-one">
+        <li><i class="fa fa-cutlery"></i><strong> Kitchen</strong></li>
+        <% if flat.wifi == true %>
+        <li><i class="fa fa-wifi"></i><strong>Wifi</strong></li>
+        <% end %>
+      </ul>
+      <ul class="am-two">
+        <li><i class="fa fa-desktop"></i><strong>TV</strong></li>
+        <li><i class="fa fa-glass"></i><strong>Welcome drink</strong></li>
+      </ul>
+    </div>
+  </div>
+</div>
